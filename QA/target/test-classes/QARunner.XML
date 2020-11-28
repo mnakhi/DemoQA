@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Selenium Project " parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="87.0"/>
+    <parameter name="url" value="https://demoqa.com/"/>
+
+    <test name = "Amazon Home">
+        <classes>
+            <!--           <class name="home.HomeTest"/>-->
+            <!--           <class name="home.TestSearch"/>-->
+            <!--           <class name="home.MoreOnHomePageTest"/>-->
+            <!--           <class name="signinsignup.SignInTest"/>-->
+            <!--           <class name="signinsignup.SignUpPageTest"/>-->
+            <!--           <class name="home.HomePageOptionsTest"/>-->
+            <!--           <class name="home.PaymentProductOptionsTest"/>-->
+            <!--           <class name="home.HelpOptionsTest"/>-->
+            <!--           <class name="hamburgericon.PrimeOptionsUseTest"/>-->
+            <!--           <class name="hamburgericon.EchoNAlexaUseTest"/>-->
+            <!--           <class name="hamburgericon.KindleOptionsTest"/>-->
+            <!--           <class name="shopping.ShoppingCartTest"/>-->
+            <!--           <class name="search.SearchNSelectNBuyTest"/>-->
+            <!--           <class name="search.MoreSearchTest"/>-->
+            <class name="elements.TestElementsPage"></class>
+        </classes>
+    </test>
+</suite>
