@@ -11,7 +11,7 @@
     <parameter name="browserVersion" value="87.0"/>
     <parameter name="url" value="https://demoqa.com/"/>
 
-    <test name = "Amazon Home">
+    <test name = "Demo QA">
         <classes>
             <!--           <class name="home.HomeTest"/>-->
             <!--           <class name="home.TestSearch"/>-->

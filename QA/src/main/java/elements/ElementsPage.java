@@ -14,12 +14,16 @@ public class ElementsPage extends CommonAPI {
     WebElement webTablesBtn;
     @FindBy(how=How.XPATH,using = "//*[@id=\"item-4\"]")
     WebElement btnBtn;
+    @FindBy(how=How.XPATH,using = "//span[text()='Links']")
+    WebElement linkBtn;
+    @FindBy(how = How.XPATH,using = "//span[text()='Broken Links - Images']")
+    WebElement brokenLinkBtn;
 
-    public void goToElementsPgae(){
+    public void goToElementsPage(){
         driver.get("https://demoqa.com/elements");
     }
     public void userCanClickOnElementsOption() throws InterruptedException {
-        goToElementsPgae();
+        goToElementsPage();
         elementBtn.click();
         //Thread.sleep(2000);
     }
@@ -31,4 +35,8 @@ public class ElementsPage extends CommonAPI {
         userCanClickOnElementsOption();
         element.click();
     }
+//    public void userCanGoToBrokenLinkPage() throws InterruptedException{
+//        userCanClickOnElementsOption();
+//        brokenLinkBtn.click();
+//    }
 }
